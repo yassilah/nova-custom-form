@@ -11,8 +11,6 @@ composer require nova-custom-form
 Once installed, simply add the CustomFormTrait to your App\Nova\Resource:
 
 <pre>
-<?php
-
 namespace App\Nova;
 
 use Laravel\Nova\Resource as NovaResource;
@@ -44,8 +42,6 @@ You can modify the Create and Edit components inside <b>/nova-components/Package
 The CustomFormTrait adds a static method "form" to your resources and passes the current request as an argument. By default, that function returns null, meaning it will use the default Nova form. You just need to override that function and return a new instance of your custom form.
 
 <pre>
-<?php
-
 namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
