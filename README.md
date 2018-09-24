@@ -8,7 +8,30 @@ This package allows you to define entirely customizable components for specific 
 composer require yassi/nova-custom-form
 ```
 
-Once installed, simply add the CustomFormTrait to your App\Nova\Resource:
+Then you need to add the service provider to your config/app.php **after the NovaServiceProvider**:
+
+<pre>
+ /*
+    |--------------------------------------------------------------------------
+    | Autoloaded Service Providers
+    |--------------------------------------------------------------------------
+    |
+    | The service providers listed here will be automatically loaded on the
+    | request to your application. Feel free to add your own services to
+    | this array to grant expanded functionality to your applications.
+    |
+    */
+
+    'providers' => [
+
+        ...
+        App\Providers\NovaServiceProvider::class,
+        ...
+        <b>Yassi\NovaCustomForm\NovaCustomFormServiceProvider::class,</b>
+        ...
+</pre>
+
+Once installed and registered, simply add the CustomFormTrait to your App\Nova\Resource:
 
 <pre>
 namespace App\Nova;

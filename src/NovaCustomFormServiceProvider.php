@@ -49,7 +49,7 @@ class NovaCustomFormServiceProvider extends ServiceProvider
                     'edit' => $resource::form(request())->getUpdateComponent()
                 ]
             ];
-        })
+        });
     }
 
     /**
