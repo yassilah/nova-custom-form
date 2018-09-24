@@ -1,0 +1,10 @@
+{
+    "name": "yassi/nova-custom-form",
+    "authors": [
+        {
+            "name": "Yasser Lahbibi",
+            "email": "yasser.lahbibi@sciencespo.fr"
+        }
+    ],
+    "require": {}
+}
