@@ -41,6 +41,6 @@ class CustomForm {
      * @return string
      */
     public function getUpdateComponent () {
-        return $this->updateComponent ?? $this->component . '-update';
+        return $this->updateComponent ?? $this->component . '-edit';
     }
 }
