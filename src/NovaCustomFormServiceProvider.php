@@ -19,7 +19,7 @@ class NovaCustomFormServiceProvider extends ServiceProvider
             Nova::provideToScript([
                 'customForms' => collect(Nova::availableResources(request()))
                 ->filter(function ($resource) {
-                    return $resource::form();
+                    return $resource::form(request());
                 })
                 ->mapWithKeys(function ($resource) {
                     return [ 
