@@ -24,8 +24,8 @@ class NovaCustomFormServiceProvider extends ServiceProvider
                 ->mapWithKeys(function ($resource) {
                     return [ 
                         (new $resource::$model)->getTable() => [
-                            'create' => $resource::form()->getCreateComponent(),
-                            'edit' => $resource::form()->getUpdateComponent()
+                            'create' => $resource::form(request())->getCreateComponent(),
+                            'edit' => $resource::form(request())->getUpdateComponent()
                         ]
                     ];
                 })

@@ -12,7 +12,7 @@ trait CustomFormTrait {
      * 
      * @return CustomForm
      */
-    public static function form () {
+    public static function form ($request) {
         return null;
     }
 }
