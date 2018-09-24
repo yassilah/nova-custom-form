@@ -5,7 +5,7 @@ This package allows you to define entirely customizable components for specific 
 # Installation 
 
 ```
-composer require nova-custom-form
+composer require yassi/nova-custom-form
 ```
 
 Once installed, simply add the CustomFormTrait to your App\Nova\Resource:
