@@ -3,7 +3,7 @@
 package-lock.json
 package.json
 yarn.*
-webpack.mix.js
+/webpack.mix.js
 composer.phar
 composer.lock
 phpunit.xml
