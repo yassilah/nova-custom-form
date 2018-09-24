@@ -18,12 +18,5 @@
         "psr-4": {
             "Yassi\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Yassi\\NovaCustomForm\\NovaCustomFormServiceProvider"
-            ]
-        }
     }
 }
